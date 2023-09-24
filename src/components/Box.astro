@@ -1,0 +1,13 @@
+---
+interface props{
+    name:String,
+    link:String,
+}
+const {name,link} = Astro.props;
+---
+
+<a href={'/'+link}>
+    <section class="rounded ring-2 ring-black m-3 text-center h-[50px] p-3">
+        <p>{name}</p>
+    </section>
+</a>

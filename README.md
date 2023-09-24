@@ -1,9 +1,16 @@
-#WATER UI
+# Water UI - Tailwind Component Library
 
-##Installation guide
+# List of components 
 
+- Card
+- Navigation
+- Table
+- Pricing Section
+- Newsletter
+- Footer
+- Sidebar
+- Hero Section
+- Testimonials
 
-##Feature list
-
-##ScreenShot 
-
+## Contribution 
+- Read the contributor.md file for detail information about contribution in this project 
