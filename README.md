@@ -1,4 +1,4 @@
-# Water UI - Tailwind Component Library
+# Water UI - Tailwind Components Library
 
 # List of components 
 
