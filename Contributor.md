@@ -6,7 +6,7 @@
 
 3. Convert the design into Code using TailwindCSS and HTML
 
-4. Create a componentVnumber(1).astro file in LibraryComponent folder inside src/components
+4. Create a componentVnumber(1).astro file in ComponentForLibrary folder inside src/components
 
 5. Send Push Request(PR) to Development Branch
 
