@@ -1,18 +1,8 @@
 ---
-import PricingCard from "../components/PricingCard.astro";
-import Layout from "../layouts/Layout.astro"
+import PricingSectionComponent from "../components/ComponentLibrary/PricingSection.astro";
+import Layout from "../layouts/AllComponentPage.astro"
 ---
 
 <Layout title="Pricing Section">
-    <div class="w-[100%] bg-white font-sans">
-        <h2 class="font-bold text-4xl p-4">Pricing Section : </h2>
-        <div class="w-[95%] bg-[#DDE4FF] rounded-md m-auto p-4">
-            <h3 class="text-center font-bold text-3xl">Pricing</h3>
-            <div class="flex md:flex-row flex-col mt-3">
-                <PricingCard tier="Basic" price={150} />
-                <PricingCard tier="Advance" price={200} />
-                <PricingCard tier="Premium" price={250} />
-            </div>
-        </div>
-    </div>
+    <PricingSectionComponent/>
 </Layout>
