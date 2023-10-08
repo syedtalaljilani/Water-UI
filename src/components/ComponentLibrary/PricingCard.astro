@@ -1,0 +1,17 @@
+---
+interface Props {
+	tier: string;
+    price: number;
+}
+const {tier , price} = Astro.props
+
+---
+
+<div class=" m-auto mt-2 bg-white w-[15rem]  md:h-[22rem] h-[16rem] md:p-6 p-1 grid rounded-md ">
+    <h5 class="text-3xl text-center">{tier}</h5>
+    <p class="text-sm font-light text-center text-slate-700 md:mt-6 mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
+    <div class="flex md:flex-col flex-row items-center md:mt-8 mt-2">
+        <h4 class="text-[#030BCC] font-bold text-3xl text-center ">$ {price}</h4>
+        <button class="bg-[#75A7F1] md:w-40 w-32 h-12 text-center m-auto rounded-lg text-white text-2xl font-medium md:mt-4" >Buy</button>
+    </div>
+</div>
