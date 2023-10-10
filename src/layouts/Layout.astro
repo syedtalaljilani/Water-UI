@@ -26,40 +26,42 @@ import Box from '../components/Box.astro';
 			<nav class="ml-auto mr-5">
 				<img src="./assets/Menu.png" class="w-[50px] " id='menu' alt="">
 			</nav>
-			<div class=" hidden bg-white h-[95vh] w-[70vw] sm:w-[25vw] right-[100px] rounded" id="drawer" >
-				<Box name="Introduction" link="Introduction" />
-				<Box name="Cards"/>
-				<Box name="Navigation"/>
-				<Box name="Table"/>
-			    <Box name="Pricing Section"/>
-				<Box name="Newsletter"/>
-				<Box name="Footer"/>
-				<Box name="Sidebar"/>
+			<div class=" hidden overflow-y-scroll bg-white h-[95vh] w-[70vw] sm:w-[25vw] right-[100px] rounded" id="drawer" >
+				<Box name="Cards" link="card"/>
+				<Box name="Navigation" link="navigation"/>
+				<Box name="Table" link="table"/>
+			    <Box name="Pricing Section" link="pricingsection"/>
+				<Box name="Newsletter" link="newsletter"/>
+				<Box name="Footer" link="footer"/>
+				<Box name="Sidebar" link="sidebar"/>
 				
 			</div>
 		</header>
 		<slot />
 	</body>
 </html>
-<style is:global>
+<style>
 	@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
 body{
 	font-family: 'Zen Dots', cursive;
-	border-radius: 40px;
 background: linear-gradient(180deg, #9A79E4 0%, #0A9AC2 100%);
 background-repeat: no-repeat;
 }
 </style>
 
 <script>
-const menubar = document.querySelector('#menu');
+	var data;
+var menubar = document.querySelector('#menu');
+
   menubar?.addEventListener('click',()=>{
-       const drawer = document.querySelector('#drawer')
-	   
+       var drawer = document.querySelector('#drawer')
 	if(drawer?.classList.contains('hidden')){
-		drawer?.classList.replace('hidden','absolute')
-	}else{
-		drawer?.classList.replace('absolute','hidden')
+		drawer?.classList.remove('hidden')
+		drawer?.classList.add('absolute')
+		data = true;
+	}else if(drawer?.classList.contains('absolute')){
+		drawer?.classList.remove('absolute')
+		drawer?.classList.add('hidden')
 	}
 })
 </script>
