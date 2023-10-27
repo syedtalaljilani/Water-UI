@@ -1,0 +1,32 @@
+---
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+import Box from '../components/Box.astro';
+
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/icon" href="/favicon.png" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>
+<style>
+	@import url('https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap');
+body{
+	font-family: 'Zen Dots', cursive;
+	background: linear-gradient(180deg, #9A79E4 0%, #0A9AC2 100%) no-repeat;
+}
+</style>
+
