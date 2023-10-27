@@ -11,6 +11,7 @@
 - Sidebar
 - Hero Section
 - Testimonials
+- Login & SignUp
 
 ## Contribution 
 - Read the contributor.md file for detail information about contribution in this project 
