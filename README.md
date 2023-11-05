@@ -14,4 +14,4 @@
 - Login & SignUp
 
 ## Contribution 
-- Read the contributor.md file for detail information about contribution in this project 
+- Read the contributor.md file for detailed information about contribution to this project 
